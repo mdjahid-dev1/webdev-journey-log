@@ -1,4 +1,4 @@
-# Customized Netflix Clone 🎬
+# Customized Netflix Clone
 
 This is a responsive Netflix landing page clone with custom modifications. Built using HTML5, CSS3, and media queries to work across mobile, tablet, and desktop screens.
 
