@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Playpen+Sans+Arabic:wght@100..800&family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    text-align: center;
+}
+
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/bg.jpg");
+    height: 105vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /*It has been used to make it pop out from the dark tone of the background. opacity has been applied for this purpose */
+}
+
+.main.box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 170vh;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    /* This is use for content pop-out  */
+    margin-top: 20px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+
+.signin-anchor{
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    /*It has been used to make it pop out from the dark tone of the background. opacity has been applied for this purpose */
+    padding: 30px;
+}
+
+.hero> :nth-child(1) {
+    /*here, due to this (>) being applied, it will only affect the particular child  */
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+    max-width: 50%;
+    line-height: 1.2;
+}
+
+.hero> :nth-child(2) {
+    /*here, due to this (>) being applied, it will only affect the particular child  */
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    /*here, due to this (>) being applied, it will only affect the particular child  */
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.separation {
+    height: 10px;
+    background: linear-gradient(to bottom right, #192247, #251b35, #FF0000 );
+    margin: 75px 0px 0px 0;
+    max-width: 100%;
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 6px 16px;
+    font-weight: bold;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 12px 27px;
+    font-size: 20px;
+    border-radius: 9px;
+}
+
+.main input {
+    padding: 12px 27px;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 1.2);
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+
+/* This is 4 card sections */
+
+.section-Title{
+    color: white;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.FourCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(10, 8, 8);
+}
+
+.card {
+    background-color: white;
+    width: 190px;
+    height: 260px;
+    border-radius: 7px;
+    margin: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.CardText {
+    color: white;
+}
+
+
+
+.image {
+    padding: 0px;
+}
+
+.image img {
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.card:hover {                   /* zoom effect in all cards */
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/* More Reason to Join section */
+.section-Title{
+    color: white;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+
+body {
+    background-color: rgb(10, 8, 8);
+}
+
+.card1 {
+    background: linear-gradient(to bottom right,  #FF0000, #192247, #251b35 );
+    padding: 16px;
+    border-radius: 15px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: white;
+
+}
+
+.paragraph{
+    font-size: 18px;
+    margin:20px;
+}
+
+.card2{
+    margin:20px;
+}
+
+
+/* frequently section */
+
+.feq{
+    background-color: rgb(10, 8, 8);;
+    color: white;
+}
+
+.feq img{
+    background-color: white;
+}
+.feq h2{
+    text-align: left;
+    margin: 20px 148px;
+}
+
+.feqbox{
+    display: flex;
+    background-color: rgb(46, 45, 45);
+    padding: 29px;
+    max-width: 78vw;
+    margin: 9px auto;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.feqbox:hover{
+    background-color: rgb(65, 62, 62);
+}
+
+.feqbox2{
+    justify-content: space-between;
+}
+
+.plus{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+footer{
+    color: white;
+    padding: 34px;
+    
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 80vw;
+    margin: 0px 10px auto;
+    
+
+}
+
+
+
+.footer a{
+    color: rgba(184, 177, 177, 0.699);
+    font-size: 14px;
+}
+
+.footer-item{
+    margin: 0px 0px 0px 98px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 23px;
+    text-align: left;
+    z-index: 30;
+}
+
+
+
+/* Additional small screen adjustments */
+@media (max-width: 480px) {
+    /* Ensure form elements stay side-by-side */
+    .hero form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    /* Footer links */
+    .footer a {
+        font-size: 12px;
+    }
+}
+
+
+/* Existing CSS remains unchanged */
+/* ... (all your existing CSS code remains exactly the same) ... */
+
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Extra small devices (phones, 375px and down) */
+@media (max-width: 375px) {
+    /* Navbar adjustments */
+    nav {
+        flex-direction:space-between;
+        height: auto;
+        padding: 10px;
+        gap: 14px;
+    }
+    
+    nav img {
+        margin-top: 15px;
+        padding: 15px;
+    }
+    
+    /* Hero section adjustments */
+    .main {
+        height: auto;
+        min-height: 100vh;
+        padding: 0px 0px;
+    }
+    
+    .hero {
+        padding: 100px 0;
+        height: auto;
+    }
+    
+    .hero> :nth-child(1) {
+        font-size: 32px;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .hero> :nth-child(2) {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .hero> :nth-child(3) {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    /* Form input and button adjustments */
+    .main input,
+    .btn-red {
+        width: 90%;
+        box-sizing: border-box;
+        margin: 5px 0;
+    }
+    
+    /* Section title adjustments */
+    .section-Title {
+        margin-left: 0px !important;
+        text-align: center !important;
+    }
+    
+    /* Four cards section */
+    .FourCards {
+        gap: 20px;
+    }
+    
+    .card {
+        width: 80%;
+        height: 63vh;
+        margin: 10px auto;
+    }
+    
+    /* Card container adjustments */
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+    
+    .card1 {
+        height: auto;
+        margin: 10px 0;
+    }
+    
+    /* FAQ section adjustments */
+    .feq h2 {
+        margin: 20px !important;
+        text-align: center !important;
+    }
+    
+    .feqbox {
+        max-width: 90vw;
+        padding: 15px;
+        font-size: 18px;
+    }
+    
+    /* Footer adjustments */
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    .footer-item {
+        margin: 0 !important;
+        align-items: center;
+        text-align: center !important;
+        gap: 15px;
+    
+    }
+    
+    /* Separation line */
+    .separation{
+        /* margin: 1.5rem 0rem; */
+        height: 8px;
+        margin:2rem 0;
+        width: 100%;
+
+    }
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 376px) and (max-width: 576px) {
+    nav {
+        justify-content: space-between;
+        height: auto;
+        padding: 20px;
+        gap: 14px;
+    }
+
+    nav img {
+        margin-top: 15px;
+        padding: 15px;
+    }
+    
+    /* Hero section adjustments */
+    .main {
+        height: auto;
+        min-height: 10vh;
+        padding: 0px 0px;
+    }
+    
+    .hero > :nth-child(1) {
+        font-size: 36px;
+        max-width: 80%;
+    }
+    
+    .card {
+        width: 47%;
+        height: 30vh;
+    }
+
+    .section-Title{
+        margin-left: 115px;
+    }
+    
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .footer-item {
+        margin-left: 40px !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) and (max-width: 768px) {
+    
+    nav {
+        justify-content: space-between;
+        height: auto;
+        padding: 20px 20px;
+        gap: 14px;
+    }
+    
+    nav img {
+        margin-top: 30px;
+        padding: 1px;
+    }
+    
+    /* Hero section adjustments */
+    .main {
+        height: auto;
+        min-height: 80vh;
+        padding: 0px 0px;
+    }
+
+    .hero {
+        padding: 100px 0;
+        height: auto;
+    }
+
+    .hero > :nth-child(1) {
+        font-size: 40px;
+        max-width: 70%;
+    }
+    
+    .separation{
+        margin-top: 200px;
+    }
+
+    .section-Title{
+        margin-left: 18rem;
+    }
+    .FourCards {
+        gap: 30px;
+    }
+    
+    .card {
+        width: 30%;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: 0px 15px;
+    }
+    
+    .card1 {
+        height: auto;
+        margin: 10px 0px;       
+    }
+
+    .card1-h2{
+        margin-top: 2rem;
+    }
+    
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 8rem;
+    }
+    
+    .footer-item {
+        margin-left: 60px !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+   
+    nav {
+        justify-content: space-between;
+        height: auto;
+        padding: 20px 30px;
+        gap: 14px;
+    }
+    
+    nav img {
+        margin-top: 30px;
+        padding: 0px;
+    }
+    
+    /* Hero section adjustments */
+    .main {
+        height: auto;
+        min-height: 70vh;
+        padding: 0px 0px;
+    }
+
+    .hero {
+        padding:75px 0px 0px 0px;
+        height: auto;
+        margin-top: 14rem;
+    }
+   
+    .hero> :nth-child(1) {
+        font-size: 40px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 20px;
+    }
+
+
+    .separation{
+        margin-top: 400px;
+    }
+
+    .section-Title{
+        margin-left: 20rem;
+    }
+    
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .feq h2 {
+        margin: 20px !important;
+        text-align: center !important;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 8rem;
+    }
+    
+    .footer-item {
+        margin-left: 60px !important;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 993px) and (max-width: 1200px) {
+   
+   nav {
+        justify-content: space-between;
+        height: auto;
+        padding: 20px 80px;
+        gap: 14px;
+    }
+    
+    nav img {
+        margin-top: 30px;
+        padding: 0px;
+    }
+    
+    /* Hero section adjustments */
+    .main {
+        height: auto;
+        min-height: 100vh;
+        padding: 0px 0px;
+    }
+
+    .hero {
+        padding:75px 0px 0px 0px;
+        height: auto;
+        margin-top: 1rem;
+    }
+   
+    .hero> :nth-child(1) {
+        font-size: 40px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 20px;
+    }
+
+    .separation{
+        margin-top: 147px;
+    }
+
+   .FourCards {
+        gap: 30px;
+    }
+    
+    .card {
+        width: 30%;
+        height: 430px;
+    }
+
+
+    .card-container {
+        /* Grid layout */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem; /* 24px gap between cards */
+        
+        /* Netflix-style adjustments */
+        padding: 0 3%; /* Side padding similar to Netflix */
+        max-width: 1200px; /* Max container width */
+        margin: 0 auto; /* Center the grid */
+    }
+
+    .section-Title{
+        margin-left: 26rem;
+    }
+
+    .feq h2 {
+        margin: 20px !important;
+        text-align: center !important;
+    }
+
+} 
+
+/* Form responsiveness for all devices */
+@media (max-width: 768px) {
+ 
+ 
+    .hero form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .main input,
+    .btn-red {
+        width: 100%;
+        margin: 5px 0;
+    } 
+}
+
+/* Card adjustments for tablets */
+@media (min-width: 577px) and (max-width: 992px) {
+    .card {
+        width: 220px;
+        height: 300px;
+    }
+    
+    .card1 {
+        height: 220px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .footer-item {
+        margin-left: 40px !important;
+    }
+}
+
+/* FAQ section adjustments */
+@media (max-width: 768px) {
+    .feqbox {
+        font-size: 18px;
+        padding: 20px;
+    }
+    
+    .feq h2 {
+        margin: 20px !important;
+        text-align: center !important;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 740px) {
+    
+    .separation{
+        margin-top: 82px;
+    }
+
+   .btn-red {
+      padding: 12px 27px;
+      font-size: 20px;
+      border-radius: 9px;
+      width: 200px;
+    }
+    
+    .card {
+        width: 30%;
+        height: 153px;
+    }
+
+}
+
