@@ -1,0 +1,512 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 164px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right ul {
+    display: flex;
+    gap: 34px;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin: 70px;
+    font-family: sans-serif;
+    background-color: bisque;
+    width: 99vw;
+    height: 60vh;
+    margin-left: 0;
+}
+
+.first span {
+    font-size: 40px;
+}
+
+section span img {
+    width: 82px;
+
+}
+
+.first p {
+    font-size: 23px;
+
+    /* choto line k vengge 2 ti line korte use korece */
+    width: 75vw;
+    text-align: center;
+}
+
+.btn {
+    background-color: #00b6d1;
+    padding: 14px 16px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    margin: 12px 0px;
+    cursor: pointer;
+}
+
+.green {
+    background-color: #5cb85c;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.second {
+    /* display: flex;
+            flex-direction: column;
+            /* flex direction colum thakay align item use kora hoyece justify use kora hoyni */
+    /* align-items: center;  same ei sob gular bodole max-width r magin auto kora hoyece*/
+
+    max-width: 50vw;
+    margin: auto;
+
+}
+
+.item {
+    padding: 23px;
+    background: azure;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.item-lang {
+
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
+}
+
+.download :nth-child(2) {
+    font-size: 23px;
+}
+
+.download {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ekhane responsive e dekheci 945 e vengge jacce tai ekhane max-width:945 diyeci. r jokhoni vangbe tokhoni grid line 1 ta hoye jay jeno tai 1fr deya hoyece. mane 945 er niche holei 1 line er hoye jabe */
+@media screen and (max-width:945px) {
+    .grid {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 10rem;
+
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-container a:hover {
+    color: rgb(108, 102, 102);
+    transition: color 1s ease;
+}
+
+.footer-logo {
+    margin-left: 10rem;
+    margin-top: 6rem;
+}
+
+.footer-logo img {
+    width: 164px;
+}
+
+.footer-logo p {
+    font-size: 12px;
+}
+
+.footer-container2 {
+    justify-content: space-between;
+
+}
+
+.span-container {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    justify-content: right;
+    margin-right: 15rem;
+}
+
+.span-container img {
+    margin-bottom: 50px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* 1200px - Large desktop */
+@media screen and (max-width: 1200px) {
+    .second {
+        max-width: 70vw;
+    }
+
+    .footer-container {
+        gap: 3rem;
+    }
+
+    .footer-logo {
+        margin-left: 5rem;
+    }
+
+    .span-container {
+        margin-right: 5rem;
+    }
+}
+
+/* 1024px - Desktop */
+@media screen and (max-width: 1024px) {
+    .first {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .first span {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .first p {
+        font-size: 18px;
+    }
+
+    .second {
+        max-width: 80vw;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-container {
+
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-left: 45px;
+        margin-bottom: 35px;
+
+    }
+
+    .footer-logo {
+        margin-top: 1rem;
+    }
+
+
+}
+
+/* 992px - Desktop */
+@media screen and (max-width: 992px) {
+    .first {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .first span {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .first p {
+        font-size: 18px;
+    }
+
+    .second {
+        max-width: 80vw;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-container {
+
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-left: 45px;
+
+    }
+
+    .footer-logo {
+        margin-top: 1rem;
+    }
+
+
+}
+
+/* 768px - Tablet */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .right ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .first {
+        margin: 30px 0;
+        padding: 30px 20px;
+    }
+
+    .first span {
+        font-size: 28px;
+    }
+
+    .first p {
+        font-size: 16px;
+        width: 90vw;
+    }
+
+    .btn {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .download {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 40px;
+        gap: 5px;
+    }
+
+
+    .download :nth-child(2) {
+        font-size: 20px;
+    }
+
+    .small {
+        font-size: 10px;
+    }
+
+    .footer-container {
+        margin-top: 5rem;
+    }
+
+    /* .footer-logo {
+                margin-left: 1rem;
+                margin-top: 2rem;
+            } */
+
+    .footer-logo {
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .footer-container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .span-container {
+        grid-auto-flow: column;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        margin-right: 6px;
+        padding: 0 18rem;
+        margin-bottom: 30px;
+    }
+
+    .span-container img {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+/* 576px - Large mobile */
+@media screen and (max-width: 576px) {
+    .logo img {
+        width: 120px;
+    }
+
+    .first span {
+        font-size: 24px;
+    }
+
+    .first p {
+        font-size: 14px;
+    }
+
+    .second {
+        max-width: 90vw;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .item {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .item-lang {
+        padding-bottom: 20px;
+    }
+
+    .grid {
+        margin-top: 35px;
+    }
+
+    .download {
+        margin-left: 2.rem;
+
+    }
+
+    .download img {
+        margin-left: 9px;
+    }
+
+    .download2 {
+        margin-left: 2px;
+    }
+
+
+
+    .footer-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 3rem;
+        margin-left: 60px;
+        justify-content: left;
+        text-align: left;
+    }
+
+
+    .footer-logo {
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .footer-container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .span-container {
+        grid-auto-flow: column;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        margin-right: 30px;
+        padding: 0 10rem;
+        margin-bottom: 30px;
+    }
+
+
+
+}
+
+/* 375px - Small mobile */
+@media screen and (max-width: 375px) {
+    .right ul {
+        gap: 10px;
+    }
+
+    .first {
+        padding: 20px 10px;
+    }
+
+    .first span {
+        font-size: 20px;
+    }
+
+    .first p {
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .download :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .download {
+        margin-left: 3.rem;
+    }
+
+    .download img {
+        margin-left: 8px;
+    }
+
+    .download2 {
+        margin-left: 1px;
+    }
+
+    .footer-container {
+        justify-content: left;
+        text-align: left;
+    }
+
+    .span-container {
+        grid-auto-flow: column;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        margin-right: 0;
+        padding: 0 10rem;
+        margin-bottom: 30px;
+    }
+}
